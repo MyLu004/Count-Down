@@ -72,7 +72,7 @@ function toggleElement(){
         myIcon.src = "firework_pixel.gif";
         myIcon_alt.src = "firework_pixel.gif";
         myheading.innerHTML = "HAPPY NEW YEAR";
-        myName.innerHTML = "Your Name";
+        myName.innerHTML = "everyone";
 
         //change the audio source
         AudioSource.src = "frad_first_date_lofi.mp3";
