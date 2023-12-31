@@ -1,4 +1,4 @@
-# COUNT DOWN WEB APP
+# COUNT DOWN to NEW YEAR
 
 ## here the link to the page: https://mylu004.github.io/Count-Down-NewYear/
 
