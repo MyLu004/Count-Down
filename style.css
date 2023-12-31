@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;700&family=Single+Day&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: pink;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 85vh;
+    font-family: 'Pixelify Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:20px;
+    height:20px;
+}
+
+.changecolor{
+    position: absolute;
+    transform: scale(0);
+    width: 250vh;
+    height:250vh;
+    border-radius: 50%;
+    background-color: #D8BBFF;
+    transition: 1000ms ease-in-out;
+    display: flex;
+    flex: 0 0 auto;
+}
+
+.changecolor.active{
+    transform: scale(1);
+    transition: 1000ms ease-in-out;
+}
+
+h1{
+    font-weight: normal;
+    font-size: 95px;
+    margin: 150px 0 40px; 
+}
+
+h1.active{
+    color:yellow;
+    position: relative;
+    bottom: 25%;
+    z-index: 2;   
+}
+
+.user_name{
+    position: absolute;
+    top:25%;
+    font-size: 40px;
+}
+
+.user_name.active{
+    font-size: 70px;
+    z-index: 2;
+}
+
+.countdown{
+    display: flex;
+    transform: scale(2);
+}
+
+.countdown.active{
+    display: none;
+}
+
+.times{
+    color:#7C9AE0;
+    font-family: 'Single Day',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.times h2{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1;
+    margin: 0 0 5px;
+}
+
+.icon_tw1{
+    position: absolute;
+    top:24%;
+    right:15%;
+    width: 9%;
+    animation: tilt-shaking 1s infinite;
+   
+}
+
+.icon_tw1.active{
+    top:35%;
+    right:35%;
+    opacity: 1;
+    z-index: 2;
+}
+
+.icon_tw2{
+    position: absolute;
+    top:55%;
+    right:75%;
+    width: 9%;
+    animation: tilt-shaking 1s infinite;
+}
+
+.icon_tw2.active{
+    top:51%;
+    left:35%;
+    opacity: 1;
+    z-index: 2;
+}
+
+#myImg{
+    position:absolute;
+    width: 20vh;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition: opacity 1000ms ease-in-out;
+    opacity: 0;
+}
+
+#myImg.active{
+    z-index: 5;
+    opacity: 1;
+}
+
+@keyframes tilt-shaking{
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+
+}
+
+@media (max-width: 500px){
+    h1{
+        font-size: 45px;
+    }
+
+    .time{
+        margin: 5px;
+    }
+
+    .time h2{
+        font-size: 12px;
+    }
+
+    .time small{
+        font-size:10px
+    }
+
+    .icon_tw1{
+        display: none;
+    }
+
+    .icon_tw2{
+        display: none;
+    }
+}
