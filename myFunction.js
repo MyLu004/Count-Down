@@ -24,9 +24,9 @@ function updateCountdowntime(){
     const currentTime = new Date();
     
     const newYearTimeNewYork = new Date(`January 1 ${currentYear + 1} 00:00:00 GMT-0500`);
-    //const diff = newYearTime - currentTime;
+    const diff = newYearTime - currentTime;
 
-    const diff = newYearTimeNewYork - currentTime;
+    //const diff = newYearTimeNewYork - currentTime;
 
 
     //second / minute(60 seconds)/ hours(60 minutes) / days (24 hours)
